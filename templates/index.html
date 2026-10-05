@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>현재 위치 날씨</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+
+<body>
+
+    <main>
+        <h1>현재 위치 날씨</h1>
+
+        <p id="status"></p>
+
+        <p>
+            온도:
+            <span id="temperature">-</span>
+            ℃
+        </p>
+
+        <p>
+            습도:
+            <span id="humidity">-</span>
+            %
+        </p>
+
+        <p>
+            풍속:
+            <span id="windSpeed">-</span>
+            m/s
+        </p>
+
+        <p>
+            강수량:
+            <span id="rainfall">-</span>
+            mm
+        </p>
+
+        <p>
+            강수형태:
+            <span id="precipitationType">-</span>
+        </p>
+
+        <p>
+            기준 시각:
+            <span id="baseTime">-</span>
+        </p>
+
+        <button id="weatherButton">
+            현재 위치 날씨 조회
+        </button>
+
+    </main>
+
+    <script
+        src="{{ url_for('static', filename='js/weather.js') }}"
+    ></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+body {
+    font-family: sans-serif;
+}
+
+main {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
